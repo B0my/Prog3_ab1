@@ -36,7 +36,6 @@ public class Main {
 //        Audio.SimpleAudioPlayerAdapter player = new Audio.SimpleAudioPlayerAdapter(url);
 //        player.einmaligAbspielen(url);
 //    }
-
     public static void nachbarSpielerei() {
         Nachbar n1 = new Nachbar("Peter", "Parker");
         Nachbar n2 = new Nachbar("Louise", "Lane");
