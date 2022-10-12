@@ -1,7 +1,9 @@
+package Orchester;
+
 import java.io.IOException;
 
 public class OrchesterApp {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         String audioDatei = "/All_Together.wav";
 

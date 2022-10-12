@@ -1,23 +1,17 @@
-import de.hsos.prog3.audio.SimpleAudioPlayer;
-// import java.IOException;
+package Audio;
+
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
 import java.net.URL;
 public interface StdAudioPlayer {
 
 
     /**
-     *
-     * @param url
+     * @param url Dateipfad der .wav Datei
      * @throws IOException
-     *
-     *
      */
     void einmaligAbspielen(URL url) throws IOException;
 
     /**
-     *
      * @param url
      * @param wiederholungen
      * @throws IOException

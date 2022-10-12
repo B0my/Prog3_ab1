@@ -1,8 +1,8 @@
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
-
     public static void main(String[] args) {
         nachbarSpielerei();
         // orchesterSpielerei();
@@ -10,13 +10,13 @@ public class Main {
 
 //    private static void orchesterSpielerei() {
 //        String audioDatei = "/All_Together.wav";
-//        Orchester orchester = new Orchester("HSOS Test", audioDatei);
+//        Orchester.Orchester orchester = new Orchester.Orchester("HSOS Test", audioDatei);
 //
-//        DirigentIn dir = new DirigentIn("Bester Man");
+//        Orchester.DirigentIn dir = new Orchester.DirigentIn("Bester Man");
 //        orchester.setDirigentIn(dir);
-//        MusikerIn sax = new MusikerIn("Lange Lunge Larry", Instrument.SAXOPHON);
-//        MusikerIn acc = new MusikerIn("Tasten Tommy", Instrument.AKKORDION);
-//        MusikerIn drum = new MusikerIn("Drum Dominik", Instrument.SCHLAGZEUG);
+//        Orchester.MusikerIn sax = new Orchester.MusikerIn("Lange Lunge Larry", Orchester.Instrument.SAXOPHON);
+//        Orchester.MusikerIn acc = new Orchester.MusikerIn("Tasten Tommy", Orchester.Instrument.AKKORDION);
+//        Orchester.MusikerIn drum = new Orchester.MusikerIn("Drum Dominik", Orchester.Instrument.SCHLAGZEUG);
 //        orchester.addMusiker(sax);
 //        orchester.addMusiker(acc);
 //        orchester.addMusiker(drum);
@@ -33,7 +33,7 @@ public class Main {
 
 //    private static void test() throws IOException {
 //        URL url = Main.class.getResource("/Accordion.wav");
-//        SimpleAudioPlayerAdapter player = new SimpleAudioPlayerAdapter(url);
+//        Audio.SimpleAudioPlayerAdapter player = new Audio.SimpleAudioPlayerAdapter(url);
 //        player.einmaligAbspielen(url);
 //    }
 

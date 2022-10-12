@@ -1,10 +1,12 @@
+package Orchester;
+
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Orchester {
     /**
-     * Konstruktor Für ein Objekt der Klasse Orchester. Dieses Objekt besitzt eine bezeichnung und den Pfad zur Konzert audio
+     * Konstruktor für ein Objekt der Klasse Orchester.Orchester. Dieses Objekt besitzt eine bezeichnung und den Pfad zu der Orchester.Konzert audio
      *
      * @param bezeichnung
      * @param audiodateiKonzert
@@ -19,12 +21,13 @@ public class Orchester {
      */
     private Verhalten verhalten;
     private DirigentIn dirigentIn;
-    private Set<MusikerIn> musikerInnen = new HashSet<>();
+    private final Set<MusikerIn> musikerInnen = new HashSet<>();
     private final String bezeichnung;
     private final String audiodateiKonzert;
 
     /**
-     * Setter Methode um den Dirigenten bei einem Konzert zu setzen
+     * Setter Methode um den Dirigenten bei einem Orchester.Konzert zu setzen
+     *
      * @param tmp
      */
     public void setDirigentIn(DirigentIn tmp) {
@@ -33,6 +36,7 @@ public class Orchester {
 
     /**
      * Fügt mithilfe des Hash Set einen neuen Musiker hinzu, der über @param übergeben wird
+     *
      * @param toAdd
      */
     public void addMusiker(MusikerIn toAdd) {
@@ -41,6 +45,7 @@ public class Orchester {
 
     /**
      * Gibt das Set der Musiker zurück
+     *
      * @return
      */
     public Set<MusikerIn> getMusikerInnen() {
@@ -48,7 +53,7 @@ public class Orchester {
     }
 
     /**
-     * Erstellt ein neues Probe Objekt mithilfe
+     * Erstellt ein neues Orchester.Probe Objekt mithilfe
      */
     void proben() throws IOException {
         verhalten = new Probe();
@@ -56,7 +61,7 @@ public class Orchester {
         try {
             verhalten.spielen(this);
         } catch (IOException e) {
-            throw new IOException("Probe wird abgebrochen", e);
+            throw new IOException("Orchester.Probe wird abgebrochen", e);
 
         }
     }
@@ -67,7 +72,7 @@ public class Orchester {
         try {
             verhalten.spielen(this);
         } catch (IOException e) {
-            throw new IOException("Konzert wird abgebrochen", e);
+            throw new IOException("Orchester.Konzert wird abgebrochen", e);
         }
     }
 

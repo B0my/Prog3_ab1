@@ -4,12 +4,12 @@ public class Nachbar {
     private String vorname;
     private String nachname;
 
-    public Nachbar(){
+    public Nachbar() {
         setVorname("Mr.");
         setNachname("Dummy");
     }
 
-    public Nachbar(String vor, String nach){
+    public Nachbar(String vor, String nach) {
         setVorname(vor);
         setNachname(nach);
     }
