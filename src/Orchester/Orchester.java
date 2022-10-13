@@ -1,15 +1,12 @@
 package Orchester;
 
-import Nachbar.Nachbar;
-
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 public class Orchester {
     /**
-     * Konstruktor für ein Objekt der Klasse Orchester.Orchester. Dieses Objekt besitzt eine bezeichnung und den Pfad zu der Orchester.Konzert audio
+     * Konstruktor für ein Objekt der Klasse Orchester. Dieses Objekt besitzt eine bezeichnung und den Pfad zu der Orchester.Konzert audio
      *
      * @param bezeichnung
      * @param audiodateiKonzert
