@@ -22,7 +22,7 @@ public class Probe implements Verhalten {
     public void spielen(Orchester orchester) throws IOException {
         Iterator<MusikerIn> it = orchester.getMusikerInnen().iterator();
         while (it.hasNext()) {
-            URL url = Main.class.getResource(it.next().getInstument().getAudiodatei());
+            URL url = Orchester.class.getResource(it.next().getInstument().getAudiodatei());
             StdAudioPlayer player = new SimpleAudioPlayerAdapter(url);
             player.einmaligAbspielen(url);
         }

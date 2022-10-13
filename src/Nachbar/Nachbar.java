@@ -1,3 +1,5 @@
+package Nachbar;
+
 import java.util.Objects;
 
 public class Nachbar {

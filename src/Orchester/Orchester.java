@@ -1,7 +1,10 @@
 package Orchester;
 
+import Nachbar.Nachbar;
+
 import java.io.IOException;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Orchester {
@@ -75,6 +78,4 @@ public class Orchester {
             throw new IOException("Orchester.Konzert wird abgebrochen", e);
         }
     }
-
-
 }

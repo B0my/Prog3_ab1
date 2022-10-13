@@ -14,7 +14,7 @@ public class Konzert implements Verhalten {
      */
     @Override
     public void spielen(Orchester orchester) throws IOException {
-        URL url = Main.class.getResource("/All_Together.wav");
+        URL url = Orchester.class.getResource("/All_Together.wav");
         StdAudioPlayer player = new SimpleAudioPlayerAdapter(url);
         player.einmaligAbspielen(url);
     }
