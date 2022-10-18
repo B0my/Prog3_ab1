@@ -42,8 +42,10 @@ public class OrchesterApp {
         try {
             // Proben, jeder Musiker spielt einmal
             orchester1.proben();
+            orchester1.spielen();
 
             // Ein Konzert wird gespielt "Alle spielen zusammen"
+            orchester1.auftreten();
             orchester1.spielen();
 
         } catch (IOException e) {

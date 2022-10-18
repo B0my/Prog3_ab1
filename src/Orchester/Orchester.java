@@ -57,22 +57,13 @@ public class Orchester {
      */
     void proben() throws IOException {
         verhalten = new Probe();
-
-        try {
-            verhalten.spielen(this);
-        } catch (IOException e) {
-            throw new IOException("Orchester.Probe wird abgebrochen", e);
-
-        }
     }
 
-    void spielen() throws IOException {
+    void auftreten() throws IOException {
         verhalten = new Konzert();
+    }
 
-        try {
-            verhalten.spielen(this);
-        } catch (IOException e) {
-            throw new IOException("Orchester.Konzert wird abgebrochen", e);
-        }
+    public void spielen() throws IOException {
+        this.verhalten.spielen(this);
     }
 }

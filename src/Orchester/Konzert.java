@@ -14,9 +14,13 @@ public class Konzert implements Verhalten {
      */
     @Override
     public void spielen(Orchester orchester) throws IOException {
-        URL url = Orchester.class.getResource("/All_Together.wav");
-        StdAudioPlayer player = new SimpleAudioPlayerAdapter(url);
-        player.einmaligAbspielen(url);
+        try {
+            URL url = Orchester.class.getResource("/All_Together.wav");
+            StdAudioPlayer player = new SimpleAudioPlayerAdapter(url);
+            player.einmaligAbspielen(url);
+        } catch (IOException e) {
+            throw new IOException("Auftritt wird abgebrochen", e);
+        }
     }
 }
 
