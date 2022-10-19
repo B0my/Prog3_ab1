@@ -26,7 +26,6 @@ public class MusikerIn extends Mitglied{
         this.hash = Objects.hash(this.getInstument(), this.getName());
         return this.hash;
     }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
