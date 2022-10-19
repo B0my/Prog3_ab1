@@ -10,7 +10,7 @@ public interface Verhalten {
      * @param orchester
      * @throws IOException
      *
-     * Interface um zu entscheiden, ob eine Orchester.Probe oder ein Orchester.Konzert gespielt werden soll
+     * Interface um zu entscheiden, ob eine Orchester.Orchester.Probe oder ein Orchester.Orchester.Konzert gespielt werden soll
      */
     void spielen(Orchester orchester) throws IOException;
 
