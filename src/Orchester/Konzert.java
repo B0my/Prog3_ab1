@@ -23,4 +23,3 @@ public class Konzert implements Verhalten {
         }
     }
 }
-
